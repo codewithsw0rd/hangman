@@ -7,19 +7,37 @@ words =("apple", "ball", "cat", "dog", "elephant")
 hangman_art = {0: ("   ",
                    "   ",
                    "   "),
-               1: (" O  ",
+               1: (" O ",
                    "   ",
                    "   "),
                2: (" O  ",
-                   " |  ",
+                   " | ",
                    "   "),
-               3: ("   ",
-                   "   ",
+               3: (" O ",
+                   "/| ",
                    "   "),
-               4: ("   ",
-                   "   ",
+               4: (" O ",
+                   "/|\\",
                    "   "),
-               5: ("   ",
-                   "   ",
-                   "   "),
-               6: ()}
+               5: (" O ",
+                   "/|\\",
+                   "/  "),
+               6: (" O ",
+                   "/|\\",
+                   "/ \\")}
+
+def display_man(wrong_ans):
+    pass
+
+def hint(hint):
+    pass
+
+def display_ans(ans):
+    pass
+
+def main():
+    ans = random.choice(words)
+    print(ans)
+
+if __name__ == "__name__":
+    main()
