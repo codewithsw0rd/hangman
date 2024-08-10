@@ -26,18 +26,19 @@ hangman_art = {0: ("   ",
                    "/|\\",
                    "/ \\")}
 
-def display_man(wrong_ans):
+def display_man(wrong_answer):
     pass
 
 def hint(hint):
     pass
 
-def display_ans(ans):
+def display_answer(answer):
     pass
 
 def main():
-    ans = random.choice(words)
-    print(ans)
+    answer = random.choice(words)
+    hint = ["_"] * len(answer)
+    print(hint)
 
-if __name__ == "__name__":
+if __name__ == '__main__':
     main()
